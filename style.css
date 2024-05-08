@@ -17,3 +17,38 @@ section {
 .box2 {
   width: 55%;
 }
+
+
+@media (min-width: 400px) and (max-width: 900px) {
+
+  header,footer {
+    height: 70px;
+  }
+
+  section {
+    width: 33.3333%;
+    height: 300px;
+    background-color: rgb(186, 180, 173);
+  }
+
+  .box2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  header,footer {
+    height: 70px;
+  }
+  section {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(213, 218, 218);
+  }
+  section + section + section {
+    display: none;
+  }
+  .box2 {
+    display: none;
+  }
+}
